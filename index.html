@@ -42,7 +42,7 @@
     </header>
     <main>
         <!-- item-container -->
-        <section class="w-10/12 mx-auto">
+        <section class="w-11/12 mx-auto">
             <!-- items -->
             <div class="flex flex-col lg:flex-row mt-10">
                 <div class="flex-1 mr-6">
@@ -54,7 +54,7 @@
 
                             <div onclick="clickToBuy(this)">
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod1.png" alt="Kitchenware"
                                             class="rounded-xl bg-[rgba(17, 17, 17, 0.05)]" />
                                     </figure>
@@ -81,7 +81,7 @@
 
                             <div onclick="clickToBuy(this)">
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod2.png" alt="Kitchenware" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -106,7 +106,7 @@
                             <!-- Kitchenware-3 -->
                             <div onclick="clickToBuy(this)">
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod3.png" alt="Kitchenware" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -137,7 +137,7 @@
                             <div onclick="clickToBuy(this)">
 
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod4.png" alt="Sportswear" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -161,7 +161,7 @@
                             <!-- Sportswear-2 -->
                             <div onclick="clickToBuy(this)">
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod5.png" alt="Sportswear" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -185,7 +185,7 @@
                             <!-- Sportswear-3 -->
                             <div onclick="clickToBuy(this)">
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod6.png" alt="Sportswear" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -217,7 +217,7 @@
                             <div onclick="clickToBuy(this)">
 
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod7.png" alt="Furniture" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -241,7 +241,7 @@
                             <!-- Furniture-2 -->
                             <div onclick="clickToBuy(this)">
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod8.png" alt="Furniture" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -265,7 +265,7 @@
                             <!-- Furniture-3 -->
                             <div onclick="clickToBuy(this)">
                                 <div class="card  bg-base-100 shadow-xl">
-                                    <figure class="px-10 pt-10">
+                                    <figure class="px-10 py-5 bg-slate-100 mx-5 mt-3">
                                         <img src="./images/prod9.png" alt="Furniture" class="rounded-xl" />
                                     </figure>
                                     <div class="card-body items-center text-center">
@@ -293,19 +293,25 @@
 
                 <!-- Calculation -->
                 <div class="ml-5 text-2xl font-medium p-2">
-                    <h2 class="mb-3">Have coupon?</h2>
-                    <input type="text" placeholder="Coupon code" id="coupon-input">
-                    <button id="btn-apply" disabled onclick="clickedApply()"
-                        class="btn  btn-sm bg-[#E527B2] text-xl font-semibold border-none  text-white">Apply</button>
-                    <div class="selected-items py-5" id="selected-items">
+                    <div class="shadow-2xl bg-white px-3 py-10 mb-10">
+                        <h2 class="mb-3">Have coupon?</h2>
+                        <input type="text" placeholder="Coupon code" id="coupon-input" class="border-1 border-black">
+                        <button id="btn-apply" disabled onclick="clickedApply()"
+                            class="btn  btn-sm bg-[#E527B2] text-xl font-semibold border-none  text-white">Apply</button>
 
                     </div>
-                    <h2>Total Price : <span id="total-price">00</span> Tk</h2>
-                    <h2>Discount : <span id="discount">00</span> Tk</h2>
-                    <h2>Total : <span id="total-after-discount">00</span> Tk</h2>
-                    <button onclick="my_modal_5.showModal()" disabled id="btn-make-purchase"
-                        class="btn w-full bg-[#E527B2] text-xl font-semibold border-none my-5 text-white">Make
-                        Purchase</button>
+                    <div class="shadow-2xl bg-white px-3 py-2">
+                        <div class="selected-items py-5" id="selected-items">
+
+                        </div>
+                        <h2>Total Price : <span id="total-price">00</span> Tk</h2>
+                        <h2>Discount : <span id="discount">00</span> Tk</h2>
+                        <h2>Total : <span id="total-after-discount">00</span> Tk</h2>
+                        <button onclick="my_modal_5.showModal()" disabled id="btn-make-purchase"
+                            class="btn w-full bg-[#E527B2] text-xl font-semibold border-none my-5 text-white">Make
+                            Purchase</button>
+
+                    </div>
                     <!-- Open the modal using ID.showModal() method -->
 
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">

@@ -12,9 +12,11 @@ const discount=((total*20)/100).toFixed(2);
 document.getElementById("discount").innerText=discount;
 const totalAfterDiscount=(total-discount).toFixed(2);
 document.getElementById("total-after-discount").innerText=totalAfterDiscount;
+return;
 }
 else{
     alert("please enter the correct code")
+    return;
 }
 }
 let total=0;
@@ -39,7 +41,7 @@ total +=priceInNumber;
 
 document.getElementById("total-price").innerText=total;
 
-// document.getElementById("total-after-discount").innerText=total;
+document.getElementById("total-after-discount").innerText=total;
 
 if(total>0){
     document.getElementById("btn-make-purchase").removeAttribute("disabled");
