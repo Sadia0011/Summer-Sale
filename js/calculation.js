@@ -1,13 +1,16 @@
 document.getElementById('btn-goHome').addEventListener('click',function(){
-    window.location.replace('http://127.0.0.1:65409/index.html')
-})
+    window.location.replace('https://64e204a7e016805d28574b9f--meek-buttercream-0f852a.netlify.app/')
+});
 
 function clickedApply(){
-    const couponInput=document.getElementById("coupon-input").value;
+    const coupon=document.getElementById("coupon-input");
+    const couponInput=coupon.value;
+    coupon.value='';
+    
 if(couponInput == 'SELL200'){
-const discount=((total*20)/100);
+const discount=((total*20)/100).toFixed(2);
 document.getElementById("discount").innerText=discount;
-const totalAfterDiscount=total-discount;
+const totalAfterDiscount=(total-discount).toFixed(2);
 document.getElementById("total-after-discount").innerText=totalAfterDiscount;
 }
 else{
@@ -36,7 +39,7 @@ total +=priceInNumber;
 
 document.getElementById("total-price").innerText=total;
 
-document.getElementById("total-after-discount").innerText=total;
+// document.getElementById("total-after-discount").innerText=total;
 
 if(total>0){
     document.getElementById("btn-make-purchase").removeAttribute("disabled");
