@@ -1,5 +1,5 @@
 document.getElementById('btn-goHome').addEventListener('click',function(){
-    window.location.replace('https://64e233c6c07fa075bc0ce415--meek-buttercream-0f852a.netlify.app/')
+    window.location.replace('../index.html')
 });
 
 function clickedApply(){
